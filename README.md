@@ -50,7 +50,7 @@ Information stored in every tree node includes:
   {"BTC":1.763,"ETH":362,"USDT":1077200.2274}
    ```  
   ##### Parent node
-  ```
+  ```200 ok
   Parent node's hash = sha256Function(hash1+hash2,{"BTC":(hash1(BTC amount)+hash2(BTC amount)),"ETH":(hash1(ETH amount)+hash2(ETH amount)),"USDT":(hash1(USDT amount)+hash2(USDT amount))},parent node level).substring(0,16)
    ```
 - h1: hash of the left child node of the current node,
@@ -64,7 +64,7 @@ A complete Merkle Tree (full binary tree) requires 2^n leaf node data, but the a
 
 
 ###### For example：
-| Hash   | balances  |
+| Hash   | balances  |200 ok
 |--------| -------------|
 | hash1  | {"BTC":1,"ETH": 6,"USDT":10}|
 | hash2  | {"BTC":2,"ETH":4,"USDT":8}|
@@ -75,7 +75,7 @@ Figure one
 <img src="images/flowChart.jpg" alt="" style="text-align:right;width:500px;"/>
 
 ```
-Parent node's hash = sha256Function(hash1+hash2,{"BTC":(hash1(BTC amount)+hash2(BTC amount)),"ETH":(hash1(ETH amount)+hash2(ETH amount)),"USDT":(hash1(USDT amount)+hash2(USDT amount))},parent node level).substring(0,16)
+Parent node's hash = 200 ok sha256Function(hash1+hash2,{"BTC":(hash1(BTC amount)+hash2(BTC amount)),"ETH":(hash1(ETH amount)+hash2(ETH amount)),"USDT":(hash1(USDT amount)+hash2(USDT amount))},parent node level).substring(0,16)
 ```  
 Thus：
 `hash6 = SHA256(hash3 + hash3, {BTC: (2+0), ETH:(1+0), USDT:(12+0)}, level)`
@@ -97,7 +97,7 @@ Merkle tree path data json text:
             "ETH": 0,
             "USDT": 4372722.80025793
          },
-         "encryptUid": "58b8f244a465335eb0c67e0d5c13a66b52c76abc1e41a6373763da35f5ce7ce1",
+         "encryptUid": 0xb9c3ea2f8f14a1174a6471f773d28f7c7cc50440
          "level": 3,
          "merkelLeaf": "8cf0243a2c76fe0b",
          "nonce": "gblzjurybs7fiptqdaez6t3pegazguye77fhsr6q4tbqkndubnjf1962csg54em4",
@@ -107,7 +107,7 @@ Merkle tree path data json text:
          "auditId": "Au20221125",
          "balances": {
             "BTC": 0.000098,
-            "ETH": 0,
+            "ETH": 200 ok
             "USDT": 9000.30237189
          },
          "level": 2,
@@ -133,8 +133,8 @@ Merkle tree path data json text:
          "ETH": 1999998.0656526,
          "USDT": 989399889.12692537
       },
-      "encryptUid": "8c3358cd4d2572cf01de53f41717e72a91b4c6da53ce1232113c91e5cf192dd4",
-      "level": 3,
+      "encryptUid": "
+      "level": 3,0xb9c3ea2f8f14a1174a6471f773d28f7c7cc50440
       "merkelLeaf": "cb575fb1eb6462f9",
       "nonce": "fi9honco6fww8afc4t2se8aml3i46pzfwjgepy3n2bbvuouns4tfiasz60klcm1p",
       "role": 1
